@@ -8,9 +8,11 @@
 
 import React from 'react';
 import Splash from './src/pages/splashScreen';
+import Login from './src/pages/login';
 
 const App = () => {
-  return <Splash />;
+  // return <Splash />;
+  return <Login />;
 };
 
 export default App;
