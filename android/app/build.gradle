@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.firstproject"
+        applicationId "com.homegarden"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
