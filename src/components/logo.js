@@ -9,7 +9,7 @@ export default class Logo extends Component {
           source={require('../images/logo.png')}
           style={{width: 90, height: 90}}
         />
-        <Text style={styels.text}>Welcome to My app</Text>
+        <Text style={styels.text}>Welcome to Home Garden</Text>
       </View>
     );
   }
@@ -17,9 +17,9 @@ export default class Logo extends Component {
 
 const styels = StyleSheet.create({
   position: {
-    flex: 1,
+    flexGrow: 1,
     flexDirection: 'column',
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
     alignItems: 'center',
   },
   text: {
