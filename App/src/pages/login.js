@@ -8,7 +8,7 @@ export default class Login extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar backgroundColor="#0277bd" barStyle="light-content" />
+        <StatusBar backgroundColor="#58a5f0" barStyle="light-content" />
         <Logo />
         <Form type="Login" />
         <View style={styles.signupTextContainer}>

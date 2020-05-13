@@ -6,6 +6,7 @@ import {
   TextInput,
   TouchableOpacity,
 } from 'react-native';
+import * as common from '../modules/common.module';
 
 export default class Form extends Component {
   render() {
@@ -48,7 +49,7 @@ const styels = StyleSheet.create({
     marginVertical: 16,
   },
   button: {
-    backgroundColor: '#004c8c',
+    backgroundColor: common.primary_color_dark,
     width: 300,
     borderRadius: 25,
     paddingVertical: 15,
