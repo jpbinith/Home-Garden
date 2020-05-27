@@ -4,22 +4,16 @@ import * as common from '../modules/common.module';
 import Logo from '../components/logo';
 import Form from '../components/loginForm';
 
-export default class Login extends Component {
-
+export default class Signup extends Component {
   render() {
-
-    const pressHandler = () =>{
-        this.props.navigation.navigate('signup')
-    }
-    
     return (
       <View style={styles.container}>
         <StatusBar backgroundColor="#58a5f0" barStyle="light-content" />
         <Logo />
-        <Form type="Login" />
+        <Form type="Signup" />
         <View style={styles.signupTextContainer}>
-          <Text style={styles.signupText}>Don't Have an account yet? </Text>
-          <Text style={styles.signupButton}onPress = {pressHandler}> Signup</Text>
+          <Text style={styles.signupText}>Already have an account? </Text>
+          <Text style={styles.signupButton}> SignIn</Text>
         </View>
       </View>
     );

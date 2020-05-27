@@ -11,18 +11,16 @@ import Splash from './src/pages/splashScreen';
 import Login from './src/pages/login';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
+import Navigator from './src/routes/LoginStack'
 
-const MainNavigator = createStackNavigator();
-
-const App = () => {
-  return (
-    <NavigationContainer>
-      <MainNavigator.Navigator>
-        <MainNavigator.Screen name="Login" component={Login} />
-        <MainNavigator.Screen name="Splash" component={Splash} />
-      </MainNavigator.Navigator>
-    </NavigationContainer>
-  );
-};
-
-export default App;
+export default class App extends Component<{}>{
+  render(){
+    return(
+      <View>
+      <Statusbar backgroundColor = "#ffffff"
+      barStyle="light-content"/>
+      <Navigator/>
+      </View>
+    );
+  }
+}
